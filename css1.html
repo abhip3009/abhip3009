@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Survey Page</title>
+    <!--linking external css style sheet-->
+    <link rel="stylesheet" href="csa.css">
+    <!--internal styling of label-->
+    <style>
+        label {
+            color: brown;
+        }
+    </style>
+
+</html>
+
+<body>
+    <!--using H1 and h2 tag for heading and subheading respectively-->
+    <h1 style="color: red;">Please fill this Survey form:-</h1>
+    <form>
+        <!--field for username in the form-->
+        <label for="username">User name:</label><br>
+        <input type="text" name="username" placeholder="choose a username"><br>
+        <!--field for E-mail in the form-->
+        <label for="e-mail_id">E-mail:</label><br>
+        <input type="email" name="e-mail_id" placeholder="your e-mail_id"><br>
+        <!--field for password in the form-->
+        <label for="password">password:</label><br>
+        <input type="password" name="password" placeholder="password"><br>
+        <!--field for Date of Birth and and selection in mm/dd/yyyy in the form-->
+        <label for="date">Date of Birth:</label><br>
+        <input type="date" name="date"><br>
+        <!--field for radio button under gender label in the form-->
+        <label for="gender">Gender:</label><br>
+        Male
+        <input type="radio" name="gender" id="male" value="male">
+        female
+        <input type="radio" name="gender" id="female" value="female">
+        others
+        <input type="radio" name="gender" id="others" value="others"><br><br>
+        <label for="rating">Please give rating between 1-5:</label><br>
+    1
+        <input type="radio" name="rating" value="1" id="1">
+        2
+        <input type="radio" name="rating" value="2" id="2">
+        3
+        <input type="radio" name="rating" value="3" id="3">
+        4
+        <input type="radio" name="rating" value="4" id="4">
+        5
+        <input type="radio" name="rating" value="5" id="5"><br><br>
+        <!--field for select dropdown list containing cities in the form-->
+        <label for="place">Place of residence:</label>
+        <select name="place" id="place">
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Bangalore">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+            <option value="others">others</option><br>
+        </select><br><br>
+        <label for="place">Please specify if chosen others:<input type="text" name="place"></label><br><br>
+        <!--field for description in the form-->
+        <label for="textarea">Comments and Suggestions:</label><br>
+        <textarea class="a" rows="5" cols="30" name="description" id="description"></textarea><br>
+        <!--field for checkbox in the form-->
+        <label for="checkbox">I confirm that all the information provided by me are true and best to my
+            understanding.</label>
+        <input type="checkbox"><br><br>
+        <input class="sub" type="button" onclick="alert('validating')" value="submit">
+    </form>
+</body>
+
+</html>

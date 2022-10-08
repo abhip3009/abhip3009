@@ -1,0 +1,12 @@
+/*specifying border-radius for the inputfield inside labels*/
+input{
+    border-radius: 10pc;
+}
+/*specifying border-radius for the input inside textarea by naming a class called a*/
+.a{
+    border-radius: 5pc;
+}
+/*specifying font colour for submit button by specifying it under class sub*/
+.sub{
+    color: brown;
+}
